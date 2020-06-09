@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>AOD</title>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link rel="stylesheet" href="dist/css/style.css" />
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="dist/js/plugins/slick.min.js"></script>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="dist/js/plugins/parallax.min.js"></script>
+	</head>
+
+	<body>
+		<header class="header">
+			<nav class="nav" aria-label="Main">
+				<div class="nav__logo nav__logo--mobile">
+					<a href="index.html">
+						<img class="nav__img" src="dist/img/logo.png" alt="Logo AOD" />
+					</a>
+				</div>
+				<ul class="nav__list nav__list--left js-nav-list">
+					<li class="nav__item js-nav-item">
+						<a href="about.html" class="nav__link nav-link">About us</a>
+					</li>
+					<li class="nav__item js-nav-item">
+						<a href="work.html" class="nav__link nav-link">Work</a>
+					</li>
+					<li class="nav__logo">
+						<a href="index.html">
+							<img class="nav__img" src="dist/img/logo.png" alt="Logo AOD" />
+						</a>
+					</li>
+
+					<li class="nav__item js-nav-item">
+						<a href="javascript:;" class="nav__link nav-link">Shop</a>
+					</li>
+					<li class="nav__item js-nav-item">
+						<a href="contact.html" class="nav__link nav-link">Contact</a>
+					</li>
+				</ul>
+				<div class="nav__hamburger js-nav-hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+		</header>
+		<main class="main home">
+			<section class="hero-banner" data-parallax="scroll" data-image-src="dist/img/home-hero.jpg"></section>
+			<section class="text-block">
+				<img src="dist/img/icon-chain.png" alt="Chain of bike" class="text-block__icon" />
+				<h2 class="text-block__heading section-heading">A new generation of vintage bike</h2>
+				<p class="text-block-paragraph">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+					since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+					centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+				</p>
+			</section>
+			<section class="grid">
+				<div class="grid__block grid__block--first-part">
+					<div class="grid__bkg-img" style="background-image: url(/dist/img/home-tile-first-row-1.jpg);">
+						<img src="dist/img/logo-bicycle-company.png" alt="Bicycle company" class="grid__logo" />
+					</div>
+					<article class="grid__article">
+						<div class="grid__text js-grid-text" data-aos="fade-up">
+							<img src="dist/img/icon-triangles.png" alt="Triangles" class="grid__icon" />
+							<h2 class="section-heading">Vintage Oliva</h2>
+							<p class="paragraph-article">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+								text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+								survived.
+							</p>
+						</div>
+						<div class="grid__image js-grid-image" style="background-image: url(/dist/img/home-tile-first-row-2.jpg);"></div>
+					</article>
+				</div>
+				<div class="grid__block grid__block--second-part">
+					<article class="grid__article">
+						<div class="grid__text js-grid-text">
+							<img src="dist/img/icon-wheel.png" alt="Triangles" class="grid__icon" />
+							<h2 class="section-heading">La Boriosa</h2>
+							<p class="paragraph-article">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+								text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+								survived.
+							</p>
+						</div>
+						<div class="grid__image js-grid-image" style="background-image: url(/dist/img/home-tile-second-row-1.jpg);"></div>
+					</article>
+					<div class="grid__bkg-img" style="background-image: url(/dist/img/shared-bicycle-swan.jpg);">
+						<img src="dist/img/logo-vintage.png" alt="Bicycle company" class="grid__logo" />
+					</div>
+				</div>
+				<div class="grid__block grid__block--third-part">
+					<div class="grid__bkg-img" style="background-image: url(/dist/img/home-tile-third-row-1.jpg);">
+						<img src="dist/img/logo-bicycles.png" alt="Bicycle company" class="grid__logo" />
+					</div>
+					<article class="grid__article">
+						<div class="grid__text js-grid-text">
+							<img src="dist/img/icon-fork.png" alt="Triangles" class="grid__icon" />
+							<h2 class="section-heading">Retrò Bike &#8722; M. Hulot</h2>
+							<p class="paragraph-article">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+								text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+								survived.
+							</p>
+						</div>
+						<div class="grid__image js-grid-image" style="background-image: url(/dist/img/home-tile-third-row-2.jpg);"></div>
+					</article>
+					<div class="grid__bkg-img grid__bkg-img--tablet-hidden" style="background-image: url(/dist/img/home-tile-third-row-3.jpg);"></div>
+				</div>
+			</section>
+			<section class="twitter-slider js-twitter-slider">
+				<div class="twitter-slider__slide">
+					<img src="dist/img/icon-twitter.png" alt="Twitter" class="twitter-slider__icon" />
+					<h3 class="slider-heading">
+						AOD New York @aod <span><span>/</span> 35 min</span>
+					</h3>
+					<p class="text-italic-large">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis
+						vitae, pretium ante amet.
+					</p>
+				</div>
+				<div class="twitter-slider__slide">
+					<img src="dist/img/icon-twitter.png" alt="Twitter" class="twitter-slider__icon" />
+					<h3 class="slider-heading">
+						AOD Novi Sad @aod <span><span>/</span> 35 min</span>
+					</h3>
+					<p class="text-italic-large">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis
+						vitae, pretium ante amet.
+					</p>
+				</div>
+				<div class="twitter-slider__slide">
+					<img src="dist/img/icon-twitter.png" alt="Twitter" class="twitter-slider__icon" />
+					<h3 class="slider-heading">
+						AOD San Francisko @aod <span><span>/</span> 35 min</span>
+					</h3>
+					<p class="text-italic-large">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis
+						vitae, pretium ante amet.
+					</p>
+				</div>
+			</section>
+			<section class="shop">
+				<div class="shop__half">
+					<div class="shop__two-thirds">
+						<div class="shop__small-block" style="background-image: url(dist/img/home-shop-1.jpg);">
+							<img src="dist/img/icon-bike.png" alt="Bicycle" /><span class="shop-span">Shop now</span>
+						</div>
+						<div class="shop__small-block" style="background-image: url(dist/img/home-shop-2.jpg);">
+							<img src="dist/img/icon-bike.png" alt="Bicycle" /><span class="shop-span">Shop now</span>
+						</div>
+						<div class="shop__big-block" style="background-image: url(dist/img/home-shop-3.jpg);">
+							<img src="dist/img/icon-bike.png" alt="Bicycle" /><span class="shop-span">Shop now</span>
+						</div>
+					</div>
+					<div class="shop__one-third" style="background-image: url(dist/img/home-shop-4.jpg);">
+						<img src="dist/img/icon-bike.png" alt="Bicycle" /><span class="shop-span">Shop now</span>
+					</div>
+				</div>
+				<div class="shop__half">
+					<div class="shop__one-third" style="background-image: url(dist/img/home-shop-5.jpg);">
+						<img src="dist/img/icon-bike.png" alt="Bicycle" /><span class="shop-span">Shop now</span>
+					</div>
+					<div class="shop__two-thirds">
+						<div class="shop__big-block shop__big-block--shop-now" style="background-image: url(dist/img/home-shop-6.jpg);">
+							<img src="dist/img/icon-bike.png" alt="Bicycle" /><span class="shop-span">Shop now</span>
+						</div>
+						<div class="shop__small-block" style="background-image: url(dist/img/home-shop-7.jpg);">
+							<img src="dist/img/icon-bike.png" alt="Bicycle" /><span class="shop-span">Shop now</span>
+						</div>
+						<div class="shop__small-block" style="background-image: url(dist/img/home-shop-8.jpg);">
+							<img src="dist/img/icon-bike.png" alt="Bicycle" /><span class="shop-span">Shop now</span>
+						</div>
+					</div>
+				</div>
+				<div class="shop__discover">
+					<a href="javascript:;" class="shop-button">Discover the shop</a>
+				</div>
+			</section>
+			<section class="newsletter">
+				<img src="dist/img/logo.png" alt="AOD logo" class="newsletter__logo" />
+				<h3 class="text-italic-large">Stay on the saddle!</h3>
+				<form class="newsletter__form">
+					<input type="email" name="email" id="email" class="newsletter__email" placeholder="enter your email... " />
+					<input type="submit" value="GO" class="newsletter-button" />
+				</form>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="wrapper">
+				<ul class="footer__info">
+					<li class="footer-heading">AOD New York</li>
+					<li class="text-italic-small">2250 Lexington Avenue</li>
+					<li class="text-italic-small">New York, NY 10035 - info@domain.com</li>
+				</ul>
+				<ul class="footer__social">
+					<li>
+						<a class="footer__icon">
+							<img src="dist/img/social-twitter.png" alt="Twitter" />
+						</a>
+					</li>
+					<li>
+						<a class="footer__icon">
+							<img src="dist/img/social-facebook.png" alt="Facebook" />
+						</a>
+					</li>
+					<li>
+						<a class="footer__icon">
+							<img src="dist/img/social-pinterest.png" alt="Pinterest" />
+						</a>
+					</li>
+				</ul>
+				<div class="footer__credits">
+					<span class="text-italic-small">Handcrafted by</span>
+					<img src="dist/img/logo-yebo.png" alt="Yebo Logo" />
+				</div>
+			</div>
+		</footer>
+
+		<script src="dist/js/main.js"></script>
+	</body>
+</html>

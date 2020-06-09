@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>AOD</title>
+		<link rel="stylesheet" href="./selectric.css" />
+		<link rel="stylesheet" href="dist/css/style.css" />
+
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="dist/js/plugins/jquery.selectric.js"></script>
+	</head>
+
+	<body>
+		<header class="header">
+			<nav class="nav" aria-label="Main">
+				<div class="nav__logo nav__logo--mobile">
+					<a href="index.html">
+						<img class="nav__img" src="dist/img/logo.png" alt="Logo AOD" />
+					</a>
+				</div>
+				<ul class="nav__list nav__list--left js-nav-list">
+					<li class="nav__item js-nav-item">
+						<a href="about.html" class="nav__link nav-link">About us</a>
+					</li>
+					<li class="nav__item js-nav-item">
+						<a href="work.html" class="nav__link nav-link">Work</a>
+					</li>
+					<li class="nav__logo">
+						<a href="index.html">
+							<img class="nav__img" src="dist/img/logo.png" alt="Logo AOD" />
+						</a>
+					</li>
+
+					<li class="nav__item js-nav-item">
+						<a href="javascript:;" class="nav__link nav-link">Shop</a>
+					</li>
+					<li class="nav__item js-nav-item">
+						<a href="contact.html" class="nav__link nav-link">Contact</a>
+					</li>
+				</ul>
+				<div class="nav__hamburger js-nav-hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+		</header>
+		<main class="main main--gray-background about">
+			<section class="hero-banner hero-banner--narrow" style="background-image: url(dist/img/about-hero.jpg);">
+				<h1 class="hero-banner-heading">About us</h1>
+			</section>
+			<section class="breadcrumbs">
+				<div class="wrapper">
+					<a href="index.html" class="breadcrumbs-link">Home</a>
+					<span class="breadcrumbs-slash">/</span>
+					<span class="breadcrumbs-current">About us</span>
+				</div>
+			</section>
+			<div class="wrapper wrapper--flex">
+				<aside class="aside">
+					<article class="grid__article aside__section">
+						<div class="grid__text js-grid-text">
+							<img src="dist/img/icon-wheel.png" alt="Triangles" class="grid__icon" />
+							<h2 class="section-heading">La Boriosa</h2>
+							<!-- <p class="paragraph-article">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+								text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+								survived.
+							</p> -->
+							<p class="paragraph-article">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+								text ever since the 1500s, when an unknown printer took a galley of type.
+							</p>
+						</div>
+						<div class="grid__image js-grid-image" style="background-image: url(/dist/img/about-sidebar.jpg);"></div>
+					</article>
+					<section class="aside__section aside__section--accordion">
+						<button class="aside__accordion-item js-accordion accordion-active">
+							Accordion item
+							<div class="plus"><span class="horizontal"></span><span class="vertical"></span></div>
+						</button>
+						<div class="aside__panel js-panel">
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+								text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+							</p>
+						</div>
+
+						<button class="aside__accordion-item js-accordion">
+							Accordion item
+							<div class="plus"><span class="horizontal"></span><span class="vertical"></span></div>
+						</button>
+						<div class="aside__panel js-panel">
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+								text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+							</p>
+						</div>
+
+						<button class="aside__accordion-item js-accordion">
+							Accordion item
+							<div class="plus"><span class="horizontal"></span><span class="vertical"></span></div>
+						</button>
+						<div class="aside__panel js-panel">
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+								text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+							</p>
+						</div>
+					</section>
+				</aside>
+				<section class="main-section">
+					<h2 class="main-section-heading-primary">A NEW GENERATION OF VINTAGE BIKE</h2>
+					<p class="main-section-paragraph-primary">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+						since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+						five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+					</p>
+					<p class="main-section-paragraph-secondary">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+						since the 1500s, when an <a href="javascript:;" class="link">inline link</a> took a galley of type and scrambled it to make a type
+						specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="javascript:;" class="link">Lorem Ipsum</a> has been
+						the industry's standard dummy text ever since the 1500s.
+					</p>
+					<p class="main-section-paragraph-secondary">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+						since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+						five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the
+						printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+					</p>
+					<article class="main-section__article">
+						<h3 class="main-section-heading-secondary">Heading 2</h3>
+						<p class="main-section-paragraph-secondary">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+							ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+							not only five centuries, but also the leap into electronic typesetting.
+						</p>
+					</article>
+					<article class="main-section__article">
+						<h4 class="main-section-heading-tertiary">Heading 3</h4>
+						<p class="main-section-paragraph-secondary">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+							ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+							not only five centuries, but also the leap into electronic typesetting.
+						</p>
+					</article>
+					<figure class="main-section__figure">
+						<img src="dist/img/shared-bicycle-swan.jpg" alt="Bicycle and swan" class="main-section__img" />
+						<figcaption class="text-italic-small">Lorem ipsum dolor sit amet</figcaption>
+					</figure>
+					<article class="main-section__article">
+						<h4 class="main-section-heading-tertiary">Heading 3</h4>
+						<p class="main-section-paragraph-secondary">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+							ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+							not only five centuries, but also the leap into electronic typesetting.
+						</p>
+					</article>
+				</section>
+			</div>
+			<section class="newsletter">
+				<img src="dist/img/logo.png" alt="AOD logo" class="newsletter__logo" />
+				<h3 class="text-italic-large">Stay on the saddle!</h3>
+				<form class="newsletter__form">
+					<input type="email" name="email" id="email" class="newsletter__email" placeholder="enter your email... " />
+					<input type="submit" value="GO" class="newsletter-button" />
+				</form>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="wrapper">
+				<ul class="footer__info">
+					<li class="footer-heading">AOD New York</li>
+					<li class="text-italic-small">2250 Lexington Avenue</li>
+					<li class="text-italic-small">New York, NY 10035 - info@domain.com</li>
+				</ul>
+				<ul class="footer__social">
+					<li>
+						<a class="footer__icon">
+							<img src="dist/img/social-twitter.png" alt="Twitter" />
+						</a>
+					</li>
+					<li>
+						<a class="footer__icon">
+							<img src="dist/img/social-facebook.png" alt="Facebook" />
+						</a>
+					</li>
+					<li>
+						<a class="footer__icon">
+							<img src="dist/img/social-pinterest.png" alt="Pinterest" />
+						</a>
+					</li>
+				</ul>
+				<div class="footer__credits">
+					<span class="text-italic-small">Handcrafted by</span>
+					<img src="dist/img/logo-yebo.png" alt="Yebo Logo" />
+				</div>
+			</div>
+		</footer>
+
+		<script src="dist/js/main.js"></script>
+	</body>
+</html>

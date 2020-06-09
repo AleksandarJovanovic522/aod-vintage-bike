@@ -1,0 +1,125 @@
+.shop__one-third,
+.shop__big-block,
+.shop__small-block {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  cursor: pointer;
+  img,
+  span {
+    z-index: 2;
+    transform: translateX(1000%);
+    opacity: 0;
+    transition: all ease 0.4s;
+  }
+  img {
+    margin-bottom: 11px;
+  }
+  &::after {
+    z-index: 1;
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: rgba($color: $green, $alpha: 0);
+    transition: all ease 0.4s;
+  }
+  &:hover {
+    img,
+    span {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+    &::after {
+      width: 100%;
+
+      background-color: rgba($color: $green, $alpha: 0.8);
+    }
+  }
+}
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.shop__half {
+  display: flex;
+  width: 50%;
+  height: 534px;
+  @media screen and (max-width: 992px) {
+    width: 100%;
+    height: 513px;
+  }
+  @media screen and (max-width: 576px) {
+    height: 161px;
+  }
+}
+.shop__two-thirds {
+  display: flex;
+  flex-wrap: wrap;
+  width: 533/800 * 100%;
+  height: 100%;
+  @media screen and (max-width: 576px) {
+    width: 100%;
+  }
+}
+.shop__one-third {
+  width: 267/800 * 100%;
+  height: 100%;
+}
+.shop__small-block {
+  width: 50%;
+  height: 50%;
+}
+.shop__big-block {
+  width: 100%;
+  height: 50%;
+
+  @media screen and (max-width: 576px) {
+    height: 100%;
+  }
+}
+
+.shop__discover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background-color: $blue-dark;
+  padding: 0 20px;
+  @media screen and (max-width: 922px) {
+    height: 198px;
+  }
+  @media screen and (max-width: 576px) {
+    height: 110px;
+  }
+  .shop-button {
+    display: inline-block;
+    border: 1px solid $white;
+    padding: 15px 55px;
+    transition: all ease 0.4s;
+    &:hover {
+      background-color: $white;
+      color: $blue-dark;
+    }
+    @media screen and (max-width: 576px) {
+      padding: 15px 45px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .shop__one-third,
+  .shop__small-block {
+    display: none;
+  }
+}

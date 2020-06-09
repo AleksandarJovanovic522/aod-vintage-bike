@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>AOD</title>
+		<link rel="stylesheet" href="dist/css/selectric.css" />
+		<link rel="stylesheet" href="dist/css/style.css" />
+
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="dist/js/plugins/jquery.selectric.js"></script>
+		<script src="dist/js/plugins/parallax.min.js"></script>
+	</head>
+
+	<body>
+		<header class="header">
+			<nav class="nav" aria-label="Main">
+				<div class="nav__logo nav__logo--mobile">
+					<a href="index.html">
+						<img class="nav__img" src="dist/img/logo.png" alt="Logo AOD" />
+					</a>
+				</div>
+				<ul class="nav__list nav__list--left js-nav-list">
+					<li class="nav__item js-nav-item">
+						<a href="about.html" class="nav__link nav-link">About us</a>
+					</li>
+					<li class="nav__item js-nav-item">
+						<a href="work.html" class="nav__link nav-link">Work</a>
+					</li>
+					<li class="nav__logo">
+						<a href="index.html">
+							<img class="nav__img" src="dist/img/logo.png" alt="Logo AOD" />
+						</a>
+					</li>
+
+					<li class="nav__item js-nav-item">
+						<a href="javascript:;" class="nav__link nav-link">Shop</a>
+					</li>
+					<li class="nav__item js-nav-item">
+						<a href="contact.html" class="nav__link nav-link">Contact</a>
+					</li>
+				</ul>
+				<div class="nav__hamburger js-nav-hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+		</header>
+		<main class="main main--gray-background contact">
+			<section class="hero-banner hero-banner--narrow" style="background-image: url(dist/img/contact-hero.jpg);">
+				<h1 class="hero-banner-heading">Contact us</h1>
+			</section>
+			<section class="breadcrumbs">
+				<div class="wrapper">
+					<a href="index.html" class="breadcrumbs-link">Home</a>
+					<span class="breadcrumbs-slash">/</span>
+					<span class="breadcrumbs-current">Contact us</span>
+				</div>
+			</section>
+			<div class="wrapper wrapper--flex">
+				<aside class="aside">
+					<section class="aside__section">
+						<h3 class="aside-heading">Google LLC</h3>
+						<ul class="aside__list">
+							<li class="aside-text">1600 Amphitheatre Parkway</li>
+							<li class="aside-text">Mountain View, CA 94043</li>
+							<li class="aside-text">USA</li>
+						</ul>
+						<a href="javascript:;" class="aside-link link">View our other locations</a>
+					</section>
+					<section class="aside__section">
+						<h3 class="aside-heading">Interested in working at AOD?</h3>
+						<p class="aside-text">
+							<a href="javascript:;" class="aside-link link">Visit our Careers site</a>
+							for information, or search our current jobs.
+						</p>
+					</section>
+				</aside>
+				<section class="main-section">
+					<h2 class="main-section-heading-primary">Contact us</h2>
+					<p class="main-section-paragraph-primary">
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. and
+						scrambled it to make a type specimen book.
+					</p>
+					<figure class="main-section__figure">
+						<img src="dist/img/shared-bicycle-swan.jpg" alt="Trulli" class="main-section__img" />
+						<figcaption class="text-italic-small">Lorem ipsum dolor sit amet</figcaption>
+					</figure>
+					<h4 class="main-section-heading-tertiary">Heading 3</h4>
+					<form class="contact-form">
+						<label class="contact-form-label" for="name" class="contact-form__label">Name</label>
+						<input type="text" name="name" id="name" class="contact-form__input" placeholder="Enter your name" />
+						<label class="contact-form-label" for="email" class="contact-form__label">Email address</label>
+						<input type="email" name="email" id="email" class="contact-form__input" placeholder="Enter your email address" />
+						<label for="select" class="contact-form-label">Subject</label>
+						<select id="select" class="contact-form__select js-form-select">
+							<option selected disabled>Select subject</option>
+							<option value="lorem">Lorem ipsum dolor sit amet</option>
+							<option value="consectetur">Consectetur adipiscing elit</option>
+							<option value="proin">Proin tincidunt purus a tortor semper facilisis quis a risus</option>
+						</select>
+						<label class="contact-form-label" for="textarea">Message</label>
+						<textarea name="textarea" cols="5" rows="5" placeholder="Enter your message" id="textarea" class="contact-form__textarea"></textarea>
+						<div>
+							<label class="contact-form-label contact-form__checkbox">
+								Nunc arcu augue, ullamcorper eget nisi quis, eleifend semper tellus
+								<input type="checkbox" class="contact-form__hiddden-checkbox" />
+								<span class="contact-form__checkmark"></span>
+							</label>
+						</div>
+						<button type="button" class="form-button">SEND</button>
+					</form>
+				</section>
+			</div>
+			<section class="newsletter">
+				<img src="dist/img/logo.png" alt="AOD logo" class="newsletter__logo" />
+				<h3 class="text-italic-large">Stay on the saddle!</h3>
+				<form class="newsletter__form">
+					<input type="email" name="email" id="email" class="newsletter__email" placeholder="enter your email... " />
+					<input type="submit" value="GO" class="newsletter-button" />
+				</form>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="wrapper">
+				<ul class="footer__info">
+					<li class="footer-heading">AOD New York</li>
+					<li class="text-italic-small">2250 Lexington Avenue</li>
+					<li class="text-italic-small">New York, NY 10035 - info@domain.com</li>
+				</ul>
+				<ul class="footer__social">
+					<li>
+						<a class="footer__icon">
+							<img src="dist/img/social-twitter.png" alt="Twitter" />
+						</a>
+					</li>
+					<li>
+						<a class="footer__icon">
+							<img src="dist/img/social-facebook.png" alt="Facebook" />
+						</a>
+					</li>
+					<li>
+						<a class="footer__icon">
+							<img src="dist/img/social-pinterest.png" alt="Pinterest" />
+						</a>
+					</li>
+				</ul>
+				<div class="footer__credits">
+					<span class="text-italic-small">Handcrafted by</span>
+					<img src="dist/img/logo-yebo.png" alt="Yebo Logo" />
+				</div>
+			</div>
+		</footer>
+
+		<script src="dist/js/main.js"></script>
+	</body>
+</html>

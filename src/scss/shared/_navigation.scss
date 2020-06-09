@@ -1,0 +1,153 @@
+header {
+	height: 100%;
+}
+.nav {
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 147px;
+	display: flex;
+	align-items: center;
+	max-width: 685px;
+	margin: 0 auto;
+	padding: 0 30px;
+	@media screen and (max-width: 992px) {
+		max-width: 678px;
+	}
+	@media screen and (max-width: 576px) {
+		align-items: flex-start;
+		padding: 0;
+	}
+}
+.nav__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	@media screen and (max-width: 576px) {
+		z-index: 2;
+		flex-direction: column;
+		padding-top: 71px;
+		height: 100vh;
+		justify-content: flex-start;
+		background-color: $white;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+}
+.nav__list--active {
+	transform: translateX(0%);
+}
+.nav__item {
+	@media screen and (max-width: 576px) {
+		width: 100%;
+		text-align: center;
+		margin: 6px 0;
+	}
+}
+.nav__link {
+	color: $purple-dark;
+	text-transform: uppercase;
+	letter-spacing: 2.6px;
+	transition: color ease 0.4s;
+	&:hover {
+		color: $green;
+	}
+	@media screen and (max-width: 576px) {
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 3.6px;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
+.nav__logo {
+	@media screen and (max-width: 576px) {
+		display: none;
+	}
+}
+.nav__logo--mobile {
+	display: none;
+	@media screen and (max-width: 576px) {
+		z-index: 1;
+		display: block;
+		width: 51px;
+		position: absolute;
+		top: 7px;
+		left: 21px;
+	}
+}
+.nav__img {
+	width: 100%;
+}
+.nav__hamburger {
+	z-index: 3;
+	position: absolute;
+	top: 19px;
+	right: 20px;
+	display: none;
+	width: 30px;
+	height: 23px;
+	transform: rotate(0deg);
+	transition: 0.5s ease-in-out;
+	@media screen and (max-width: 576px) {
+		display: block;
+	}
+	cursor: pointer;
+	span {
+		display: block;
+		position: absolute;
+		height: 2px;
+		width: 100%;
+		background: $green;
+		opacity: 1;
+		left: 0;
+		transform: rotate(0deg);
+		transition: 0.25s ease-in-out;
+		&:nth-child(1) {
+			top: 4px;
+			transform-origin: left center;
+		}
+		&:nth-child(2) {
+			top: 10px;
+			transform-origin: left center;
+		}
+		&:nth-child(3) {
+			top: 16px;
+			transform-origin: left center;
+		}
+	}
+
+	&.open span {
+		&:nth-child(1) {
+			transform: rotate(45deg);
+			top: 0;
+			left: 5px;
+		}
+		&:nth-child(2) {
+			width: 0%;
+			opacity: 0;
+		}
+		&:nth-child(3) {
+			transform: rotate(-45deg);
+			top: 21px;
+
+			left: 5px;
+		}
+	}
+}
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(150px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}

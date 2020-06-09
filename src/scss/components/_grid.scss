@@ -1,0 +1,146 @@
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+}
+.grid__block {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-wrap: wrap;
+}
+
+.grid__block--second-part {
+	@media screen and (max-width: 576px) {
+		.grid__bkg-img {
+			order: 1;
+		}
+		.grid__article {
+			order: 2;
+		}
+	}
+}
+
+//all articles
+.grid__article {
+	height: 100%;
+	.section-heading {
+		margin-bottom: 11px;
+		@media screen and (max-width: 576px) {
+			margin-bottom: 16px;
+		}
+	}
+}
+.grid__article,
+.grid__block--third-part .grid__bkg-img {
+	width: 533/1600 * 100%;
+	@media screen and (max-width: 992px) {
+		width: 50%;
+	}
+	@media screen and (max-width: 576px) {
+		width: 100%;
+	}
+}
+
+//all images
+.grid__image,
+.grid__bkg-img {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.grid__image {
+	height: 200px;
+	@media screen and (max-width: 576px) {
+		display: none;
+	}
+}
+.grid__bkg-img {
+	display: flex;
+	align-items: center;
+	@media screen and (max-width: 576px) {
+		height: 230px;
+	}
+}
+//background wider
+.grid__block--first-part .grid__bkg-img,
+.grid__block--second-part .grid__bkg-img {
+	width: 1067/1600 * 100%;
+	@media screen and (max-width: 992px) {
+		width: 50%;
+	}
+	@media screen and (max-width: 576px) {
+		width: 100%;
+	}
+}
+//logo
+.grid__logo {
+	display: block;
+	margin: 0 auto;
+}
+
+//all icons
+.grid__icon {
+	display: block;
+	margin: 0 auto 26px;
+	max-height: 29px;
+}
+
+//all text blocks
+.grid__text {
+	padding: 72px 30px 90px;
+	position: relative;
+	.paragraph-article {
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -36px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 50px;
+			height: 1px;
+			background-color: $gray-lighter;
+			@media screen and (max-width: 992px) {
+				bottom: -21px;
+			}
+			@media screen and (max-width: 992px) {
+				bottom: -23px;
+			}
+		}
+	}
+	@media screen and (max-width: 992px) {
+		padding: 61px 15px 71px;
+		.paragraph-article {
+			max-width: 326px;
+		}
+	}
+
+	@media screen and (max-width: 576px) {
+		padding: 32px 15px 53px;
+		.paragraph-article {
+			max-width: 276px;
+		}
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -10px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 0;
+		height: 0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 10px solid $white;
+		@media screen and (max-width: 576px) {
+			display: none;
+		}
+	}
+}
+.grid__bkg-img--tablet-hidden {
+	@media screen and (max-width: 992px) {
+		display: none;
+	}
+}

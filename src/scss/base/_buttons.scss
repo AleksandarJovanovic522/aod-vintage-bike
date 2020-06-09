@@ -1,0 +1,45 @@
+.newsletter-button {
+	width: 126px;
+	font-family: $font;
+	font-size: 24px;
+	font-weight: 200;
+	padding: 23px 0;
+	line-height: 1;
+	background-color: $green;
+	color: $white;
+	text-align: center;
+	cursor: pointer;
+	@media screen and (max-width: 992px) {
+		width: 126/708 * 100%;
+	}
+
+	@media screen and (max-width: 576px) {
+		width: 100%;
+	}
+}
+
+.form-button {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 69px;
+	width: 153px;
+	font-family: $font;
+	font-weight: 200;
+	font-size: 24px;
+	color: $white;
+	background-color: $green;
+	@media screen and (max-width: 576px) {
+		height: 50px;
+		width: 100%;
+		font-size: 20px;
+	}
+}
+.newsletter-button,
+.form-button {
+	transition: all ease 0.4s;
+	&:hover {
+		opacity: 0.8;
+	}
+}

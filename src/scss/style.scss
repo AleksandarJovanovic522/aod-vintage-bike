@@ -1,0 +1,31 @@
+//base
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/buttons';
+@import 'base/wrapper';
+//shared components
+@import 'shared/text-block';
+@import 'shared/navigation';
+@import 'shared/hero-banner';
+@import 'shared/breadcrumbs';
+@import 'shared/newsletter';
+@import 'shared/footer';
+@import 'shared/aside';
+@import 'shared/main-section';
+//components
+@import 'components/grid';
+@import 'components/twitter-slider';
+@import 'components/shop';
+@import 'components/cta-boxes';
+@import 'components/centered-slider';
+@import 'components/contact-form';
+@import 'components/accordion';
+//slick
+@import 'plugins/slick-theme';
+@import 'plugins/slick';
+//aos
+// @import 'plugins/aos/animations';
+// @import 'plugins/aos/core';
+// @import 'plugins/aos/easing';

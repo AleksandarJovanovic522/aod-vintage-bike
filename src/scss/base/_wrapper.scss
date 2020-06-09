@@ -1,0 +1,18 @@
+.wrapper {
+	width: 1200/1600 * 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	@media screen and (max-width: 992px) {
+		width: 100%;
+	}
+	@media screen and (max-width: 576px) {
+		padding: 0;
+	}
+}
+.wrapper--flex {
+	display: flex;
+	@media screen and (max-width: 992px) {
+		flex-wrap: wrap;
+	}
+}

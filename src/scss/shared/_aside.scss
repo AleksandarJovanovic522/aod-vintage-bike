@@ -1,0 +1,110 @@
+.aside {
+	width: 280/1200 * 100%;
+	min-width: 240px;
+	max-width: 260px;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	@media screen and (max-width: 992px) {
+		order: 2;
+		width: 100%;
+		margin: 0;
+		flex-direction: row;
+		max-width: none;
+		justify-content: space-between;
+		margin-bottom: 31px;
+	}
+	@media screen and (max-width: 576px) {
+		display: block;
+		margin-bottom: 7px;
+	}
+	.grid__article {
+		width: 100%;
+		height: auto;
+		padding: 30px 20px 0;
+		background-color: $white;
+		@media screen and (max-width: 992px) {
+			width: 349/728 * 100%;
+			max-width: 349px;
+		}
+		@media screen and (max-width: 576px) {
+			width: 100%;
+			max-width: 349px;
+		}
+		.grid__text {
+			padding: 0 0 40px;
+			@media screen and (max-width: 992px) {
+				padding: 0 5px 53px;
+			}
+			@media screen and (max-width: 992px) {
+				padding: 0 0 53px;
+			}
+
+			.section-heading {
+				margin-bottom: 13px;
+				@media screen and (max-width: 576px) {
+					margin-bottom: 20px;
+				}
+			}
+			.paragraph-article {
+				text-align: left;
+				&:after {
+					bottom: -13px;
+					@media screen and (max-width: 992px) {
+						bottom: -23px;
+					}
+				}
+				@media screen and (max-width: 576px) {
+					text-align: center;
+				}
+			}
+		}
+		.grid__image {
+			height: 98px;
+			margin: 0 -20px;
+		}
+		.grid__icon {
+			margin-bottom: 30px;
+		}
+	}
+}
+.aside__section {
+	padding: 11px 20px;
+	margin-bottom: 31px;
+	background-color: $white;
+	@media screen and (max-width: 992px) {
+		width: 349/728 * 100%;
+		max-width: 349px;
+	}
+	@media screen and (max-width: 576px) {
+		width: 100%;
+		max-width: 280px;
+		margin: 0 auto 22px;
+	}
+}
+.aside-heading {
+	margin-bottom: 8px;
+	@media screen and (max-width: 992px) {
+		max-width: 229px;
+	}
+}
+.aside__list {
+	margin-bottom: 10px;
+	margin-bottom: 8px;
+}
+.aside__list,
+.aside-text {
+	@media screen and (max-width: 992px) {
+		max-width: 229px;
+	}
+}
+.about {
+	.aside {
+		@media screen and (max-width: 992px) {
+			margin-bottom: 29px;
+		}
+		@media screen and (max-width: 576px) {
+			margin-bottom: 11px;
+		}
+	}
+}

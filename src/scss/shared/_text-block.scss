@@ -1,0 +1,43 @@
+.text-block {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: $gray-lightest;
+	padding: 114px 30px 115px;
+	@media screen and (max-width: 922px) {
+		padding-bottom: 114px;
+	}
+	@media screen and (max-width: 576px) {
+		padding: 23px 20px 12px;
+	}
+	.section-heading {
+		width: 100%;
+		max-width: 535px;
+		@media screen and (max-width: 576px) {
+			line-height: 1.333;
+		}
+	}
+	.text-block-paragraph {
+		max-width: 1080px;
+		margin: 20px 0;
+
+		@media screen and (max-width: 576px) {
+			font-size: 16px;
+			line-height: 1.625;
+			margin: 17px 0;
+		}
+	}
+}
+.text-block__icon {
+	display: block;
+	margin: 0 auto 26px;
+}
+.text-block--work {
+	padding: 114px 10px 115px;
+	@media screen and (max-width: 576px) {
+		padding: 23px 20px 12px;
+	}
+}
